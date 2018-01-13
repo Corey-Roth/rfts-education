@@ -1,0 +1,837 @@
+$brand: #E41F35
+$brand-dark: #8B0000
+$white: #FFFFFF
+$grey: #AFAAA7
+$lightgrey: #F0E8E1
+$black: #000000
+$teal: #00ADA4
+
+html
+	font-size: 16px
+
+h3.eyebrow
+	color: $teal
+	font-size: 1rem
+	font-weight: 700
+	margin: 0
+	text-transform: uppercase
+
+h4
+	font-size: 1.25em
+	font-weight: 700
+	margin: 0 0 0.5rem
+
+ul
+	margin: 0
+	padding: 0
+
+li
+	padding: 0.25rem 0
+
+.unstyled-list
+	list-style-type: none
+
+.footer-desktop, .footer-tablet, .footer-mobile
+	background-image: url('./assets/black-footer.png')
+
+.get-started
+	align-items: center
+	background: #f9f9f9
+	border: 1px solid #cccccc
+	border-radius: 4px
+	display: flex
+	justify-content: space-between
+	margin: 6rem 0 0
+	position: relative
+	padding: 2rem
+	h2
+		font-size: 2em
+		color: #333333
+		margin: 0
+		padding: 0
+	.button-primary
+		font-size: 1.25em
+		font-weight: 400
+		padding: 1rem 2rem
+
+
+a.button-primary, button.button-primary
+	border: 0 none
+	box-shadow: 0 2px 2px 0 rgba(20,0,0,0.16), 0 0 0 1px rgba(20,0,0,0.08)
+	font-size: 1.1em
+	font-weight: 700
+	padding: 10px 20px
+	display: inline-block
+	background: $brand
+	color: $white
+	border-radius: 4px
+	cursor: pointer
+	transition: all 200ms cubic-bezier(0.4, 0.0, 0.2, 1)
+	&:hover
+		transform: translatey(1px)
+
+a.button-secondary
+	@extend a.button-primary
+	background: $white
+	color: $black
+	font-weight: 400
+	&:hover
+		color: $brand
+		text-decoration: none
+
+.button-primary + .button-secondary
+	margin-left: 1rem
+
+.button-primary:hover
+	background: #b6192a
+	text-decoration: none
+	color: $white
+
+.icon-row
+	margin-top: 3rem
+	margin-bottom: -6rem
+	img
+		display: block
+		max-width: 80px
+		margin: 2rem auto 1rem
+
+.icon-row p
+	font-size: 1.25em
+	font-weight: 400
+	text-align: center
+
+.modal-content
+	border-radius: 0
+
+
+
+
+
+.full-width-image-article-light > div.banner-copy
+	height: auto
+	position: relative
+	font-weight: 300
+	width: 100%
+
+
+.banner-copy h2
+    position: relative
+    width: 50%
+    font-size: 3em
+    line-height: 1.2em
+    padding-top: 20px
+    padding-bottom: 0px
+    margin-top: 0
+    margin-bottom: 1rem
+    font-weight: 300
+    letter-spacing: -0.0125em
+
+
+.banner-copy p
+    position: relative
+    width: 50%
+    font-size: 1.25em
+    font-weight: 300
+    padding-top: 0
+
+
+.header
+	align-items: flex-end
+	display: flex
+	height:auto !important
+	justify-content: space-between
+	box-shadow:0 0 !important
+	h2
+		max-width: 50%
+
+
+/** brand new code **/
+
+.tout:after
+	content: ""
+	display: table
+	clear: both
+
+.tout-content--heading
+	font-size: 3em
+	font-weight: 300
+	letter-spacing: -0.004em
+	line-height: 1.1
+	padding: 0
+	margin: 0
+	margin-bottom: 1rem
+
+
+.tout-content--copy, .tout-content--cta
+	display: block
+	font-size: 1.125em
+	font-weight: 300
+	line-height: 1.65
+	color: #333333
+	margin: 0
+	margin-bottom: 1.25rem
+
+
+.tout-content--cta
+	font-weight: 700
+	color: $brand
+	cursor: pointer
+	&:after
+		color: $black
+		content: "\0000a0\00BB"
+		white-space: nowrap
+
+
+.tout-content--cta:hover
+	color: $black
+	text-decoration: none
+
+
+.tan
+	background: #ebe1d2
+
+
+.tout.tan.centered
+	text-align: center
+	padding: 30px calc(5.5% + 8px)
+
+
+.centered .button-primary
+	margin-top: 15px
+
+
+.black
+	background: #1a1a1a
+
+
+.black h2, .black p
+	color: $white
+
+
+.tout.color-block
+	margin-left: calc(-5.5% - 7.5px)
+	margin-right: calc(-5.5% - 8px)
+	position: relative
+	padding: 60px calc(5.5% + 8px)
+
+
+.color-block .tout-content
+	margin-top: 0
+	position: relative
+	z-index: 10
+
+
+
+.footer-tuck
+	margin-bottom: -80px
+	padding-bottom: 60px
+
+
+
+.media-modal
+	cursor: pointer
+
+
+.modal-dialog
+	width: 1200px
+	max-width: 80vw
+
+
+.video
+	position: relative
+	padding-top: 4.1%
+	padding-bottom: 51.95%
+	height: 0
+
+
+.video iframe
+	position: absolute
+	top: 0
+	left: 0
+	height: 100%
+	width: 100%
+	min-height: 0
+	border-radius: 5px
+
+//state select
+.state-select
+	border: 1px solid #cccccc
+	border-radius: 4px
+	padding: 2rem
+	label
+		color: #333333 !important
+		font-size: 1.25em !important
+		font-weight: 300 !important
+	.error
+		display: none
+	a.button-primary
+		display: inline-block
+
+
+.styled-select
+	border: 1px solid #cccccc
+	border-radius: 4px
+	display: block
+	margin-bottom: 2em
+	width: 100%
+	&:after
+		content: "\25BE"
+		font-family: 'myriad-pro'
+		font-size: 1.5em
+		top: 0
+	> select
+		background: none
+		border: 0 none
+		border-radius: 0
+		margin: 0
+
+.state-select.no-js
+	.error
+		color: $brand
+		display: block
+	a.button-primary
+		display: none
+
+//Jump links
+.jump-links
+	align-items: center
+	background: $white
+	border-bottom: 1px solid $grey
+	box-shadow: 0 2rem 2rem -2rem rgba(20, 0, 0, 0.16)
+	display: flex
+	justify-content: space-between
+	padding: 1rem 12.5%
+	width: 100%
+	.button-primary
+		background: $brand
+		border-radius: 4px
+		box-shadow: 0 2px 2px 0 rgba(20,0,0,0.16), 0 0 0 1px rgba(20,0,0,0.08)
+		color: $white
+		padding: 1rem 1.5rem
+		transition: all 200ms cubic-bezier(0.4, 0.0, 0.2, 1)
+		&:hover
+			background: $brand-dark
+			color: $white
+
+.jump-links a
+	text-align: center
+	font-size: 1em
+	font-weight: 400
+	color: black
+
+.jump-links a:hover
+	color: $brand
+	text-decoration: none
+
+.jump-links .active-jump
+	font-weight: 700
+	color: $brand
+
+
+
+
+
+//Gridded
+.grid-row-4
+	display: grid
+	grid-column-gap: 4rem
+	grid-row-gap: 0
+	grid-template-columns: 1fr 1fr
+	.tout-content--copy
+		grid-row-start: 1
+	.tout-content--cta
+		grid-row-start: 2
+
+.padded-row
+	display: flex
+	flex-wrap: wrap
+	div
+		margin-bottom: 4.5rem
+		padding: 0 2rem
+		padding-left: 4.5rem
+	img
+		float: left
+		margin-left: -4.5rem
+		max-width: 3rem
+
+
+
+
+
+//red bg
+.tout.red-bg
+	background: $brand
+	color: $white
+	height: auto
+	padding: 4.5rem
+	position: relative
+	.tout-content--heading
+		padding-top: 0
+		width: 55%
+	.tout-content--copy
+		color: $white
+		width: 55%
+
+.red-bg img
+	max-height: 550px
+	position: absolute
+	right: 0
+	top: 4.5rem
+	width: 45%
+
+
+
+
+//Totally not the tabbed carousel
+.full-width-tab
+	.tabs
+		display: flex
+		padding-left: 70px
+	.tab
+		cursor: pointer
+		font-size: 2rem
+		font-weight: 400
+		margin-bottom: 1rem
+		margin-right: 2rem
+
+.tab.active
+	color: $brand
+	position: relative
+	&:after
+		border-left: 1rem solid transparent
+		border-right: 1rem solid transparent
+		border-bottom: 1rem solid $lightgrey
+		bottom: -1rem
+		content: ""
+		height: 0
+		left: 50%
+		position: absolute
+		width: 0
+
+.tab-content
+	background: $lightgrey
+	height: 40vw
+	max-height: 37rem
+	overflow: hidden
+
+
+.tabbed-container
+	background: $lightgrey
+	margin: 0
+	padding: 4.5rem
+	h3
+		font-size: 1.25em
+		font-weight: 700
+	p
+		font-size: 1.125em
+		font-weight: 300
+
+
+
+
+
+//ruled header
+.ruled-header
+	border-bottom: 1px solid $grey
+	margin-bottom: 3rem
+	text-align: center
+	width: 100%
+	h3
+		background: white
+		display: inline-block
+		font-size: 1rem
+		font-weight: 700
+		line-height: 1
+		margin: 0
+		padding: 0 16px
+		text-transform: uppercase
+		transform: translatey(66.66%)
+
+
+
+
+//utilities
+.mb-32
+	margin-bottom: 3rem
+
+.mb-64
+	margin-bottom: 4rem
+
+.pb-0
+	padding-bottom: 0 !important
+
+.gutter-escape
+	margin-left: -70px
+	margin-right: -71px
+
+li .small
+	display: block
+	font-size: 14px
+
+.reverse h2, .reverse p
+	color: $white
+
+.banner-illustrated
+	height: 40vw
+	max-height: 32rem
+	padding: 4.5rem 10rem
+	position: relative
+	.banner-copy
+		position: relative
+		z-index: 1
+
+.background-img
+	bottom: 0
+	left: 0
+	overflow: hidden
+	position: absolute
+	right: 0
+	top: 0
+	img
+		bottom: 0
+		font-family: "object-fit: cover"
+		height: 100%
+		left: 0
+		max-height: none
+		max-width: none
+		object-fit: cover
+		position: absolute
+		width: 100%
+		right: 0
+		top: 0
+
+.padded
+	margin-left: 5rem
+	h2
+		font-size: 5rem
+		margin: 0
+		padding: 0
+		width: auto
+	p
+		font-weight: 400
+		width: auto
+
+@import 'video'
+
+
+
+
+
+/** Media Queries **/
+@media (max-width: 1280px)
+	.red-bg img
+		max-height: 25rem
+
+	.tab-content
+		height: 60vw
+		max-height: 48rem
+
+	.gutter-escape
+		margin-left: -5.50vw
+		margin-right: -5.5vw
+
+	.full-width-tab .tabs
+		padding-left: 5.5vw
+
+	.full-width-tab .tab
+		font-size: 1.5em
+
+	.tabbed-container, .tout.red-bg
+		padding: 3rem 5.5vw
+
+@media (min-width: 992px)
+	.tout
+		padding: 6rem 0 0
+
+
+	.inset
+		padding: 2rem 8.33%
+
+	.header h2
+		padding-right: 70px
+
+
+
+@media (max-width: 991px)
+
+	.jump-links
+		padding: 1rem 2rem
+
+	.tout.color-block
+		margin-left: calc(-5.5% - 7.5px)
+		margin-right: calc(-5.5% - 8px)
+		position: relative
+		padding: 2rem calc(5.5% + 8px)
+
+
+	.tout
+		padding: 4rem 0 0
+		position: relative
+
+
+	.get-started h2
+		font-size: 2em
+
+
+	.banner-copy h2
+		font-size: 2.5em
+		letter-spacing: -0.0125em
+
+	.red-bg img
+		max-height: 25rem
+
+	.tab-content
+		height: auto
+		min-height: 30rem
+
+
+
+
+
+
+@media (max-width: 767px)
+	.header
+		display: flex
+		padding-bottom: 25px
+		h2
+			font-size: 1.25em
+			max-width: 50%
+			padding: 0 25px
+
+	.tout-content--heading
+		font-size: 2em
+
+	.banner-copy h2
+		font-size: 2em
+
+	.tout.color-block
+		padding: 30px 25px
+
+
+	body
+		font-size: 16px
+
+
+	.get-started
+		flex-direction: column
+		padding: 2rem 1rem
+		text-align: center
+		margin: 3rem 0
+
+
+	.get-started a
+		margin: 15px 0
+
+
+	.blue-arc
+		margin-top: -30px
+		margin-bottom: -1px
+
+
+	.jump-links
+		margin-left: -25px
+		margin-right: -25px
+		padding: 1rem 2rem
+		width: auto
+		.button-primary
+			margin: 0
+
+	.get-started h2
+		margin-bottom: 30px
+
+
+	.tout-content--heading
+		margin-top: 30px
+
+	.state-select
+		padding: 2rem 1rem
+
+
+	.tab
+		margin-top: 30px
+		margin-left: -25px
+		margin-right: -25px
+
+
+	.toggle-content
+		display: none
+		text-align: center
+		width: 100%
+		float: none
+		padding-top: 30px
+
+
+	#first-toggle
+		display: block
+
+
+	.toggle-titles
+		background: #000000
+		margin-left: -25px
+		margin-right: -25px
+		padding: 0
+		cursor: pointer
+
+
+	.toggle-titles h3
+		padding: 15px 25px
+
+
+	.toggle-titles h3.active
+		background: #333333
+		color: $white
+
+
+	.banner-copy h2, .banner-copy p
+		width: 100%
+
+
+	.tout
+		padding: 0
+
+
+	.tout-content
+		padding-bottom: 30px
+
+
+	.tout-media
+		width: auto
+		padding: 0
+		margin-left: -25px
+		margin-right: -25px
+
+
+	.color-block .tout-content
+		display: block
+		width: 100%
+		padding: 30px 0
+
+
+	.tout.color-block
+		margin: 0 -25px
+
+
+	.footer-tuck
+		padding-bottom: 30px
+
+
+	.cardinal-logo-img
+		height: 50px
+
+
+	.cardinal-logo
+		height: auto
+
+
+	.video
+		margin-right:0!important
+
+
+	.video iframe
+		border-radius: 0
+
+
+	.icon-row p
+		font-size: 1.25em
+		font-weight: 700
+		text-align: center
+
+	.icon-row img
+		max-width: 4em
+
+
+	.header
+    	height: auto
+
+
+	.state-select
+		margin: 3em 0
+
+	.video-gallery
+		margin-left: -25px
+		margin-right: -25px
+		width: calc(100% + 50px)
+		label
+			margin: 0 25px !important
+			width: calc(100% - 50px)
+
+	.banner-illustrated
+		padding: 2rem 3rem
+		.banner-copy
+			margin-left: 6rem
+			max-width: 40vw
+
+	.gutter-escape
+		margin-left: -25px
+		margin-right: -25px
+
+	.centered-img
+		display: block
+		margin: 2rem auto
+		max-width: 50vw
+
+	.grid-row-4
+		display: block
+		padding: 0 2rem
+
+	.tout.red-bg .tout-content--heading
+		margin: 0
+		width: 100%
+
+	.tout.red-bg .tout-content--copy
+		width: 40%
+
+ 	.red-bg img
+ 		right: -2rem
+		width: 60%
+
+	.tout.red-bg
+		margin-bottom: 1rem
+		padding: 2rem 3rem 0
+
+	.inset-mobile
+		padding-right: 12rem
+
+	.full-width-tab .tab
+		font-size: 1.25em
+		margin-top: 0
+
+	.full-width-tab .tabs
+		padding-left: 50px
+
+	.tab-content
+		height: 100vh
+		max-height: none
+
+
+	a.button-primary, a.button-secondary
+		display: block
+		margin: 2rem 0
+		padding: 1rem 3rem
+		text-align: center
+
+	.tabbed-container
+		padding: 2rem
+
+	.button-primary + .button-secondary
+		margin-left: 0
+
+
+
+@media (max-width: 540px)
+
+	.large-copy h2, .large-copy p
+		font-size: 2.5em
+
+
+	.button-primary + .button-secondary
+		margin-left: 0
+
+	.jump-links
+		flex-wrap: wrap
+		a
+			width: 50%
+
+
+
+
