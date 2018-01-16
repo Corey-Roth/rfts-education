@@ -372,6 +372,9 @@ a.button-secondary {
   .tabbed-container p {
     font-size: 1.125em;
     font-weight: 300; }
+  .tabbed-container .small {
+    font-size: 1em;
+    font-weight: 400; }
 
 .ruled-header {
   border-bottom: 1px solid #AFAAA7;
