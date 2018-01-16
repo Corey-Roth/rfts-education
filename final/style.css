@@ -449,6 +449,14 @@ li .small {
     font-weight: 400;
     width: auto; }
 
+.banner-copy.large-copy h2 {
+  font-size: 4em;
+  letter-spacing: -0.0125em; }
+
+.banner-copy.large-copy p {
+  font-size: 1.5em;
+  font-weight: 400; }
+
 .video-gallery {
   margin-top: 3em;
   margin-bottom: 3rem;
@@ -747,6 +755,7 @@ li .small {
     margin-top: -30px;
     margin-bottom: -1px; }
   .jump-links {
+    border-top: 1px solid #CCCCCC;
     margin-left: -25px;
     margin-right: -25px;
     padding: 1rem 2rem;
@@ -873,11 +882,38 @@ li .small {
     margin-left: 0; } }
 
 @media (max-width: 540px) {
+  .tab-content {
+    height: auto; }
+  .inset-mobile {
+    padding-right: 0; }
+  .header h2 {
+    padding: 0 25px 0 0; }
+  .cardinal-logo-img {
+    height: auto;
+    width: 116px; }
   .large-copy h2, .large-copy p {
     font-size: 2.5em; }
+  .banner-copy.large-copy h2 {
+    font-size: 3em; }
+  .banner-copy.large-copy p {
+    font-size: 1.125em; }
   .button-primary + .button-secondary {
     margin-left: 0; }
   .jump-links {
-    flex-wrap: wrap; }
+    flex-wrap: wrap;
+    padding: 1em; }
     .jump-links a {
-      width: 50%; } }
+      font-size: 14px;
+      width: 50%; }
+    .jump-links .button-primary {
+      padding: 0.75rem 1rem; }
+  .tout.red-bg .tout-content--heading {
+    font-size: 1.5em;
+    margin-bottom: 1em;
+    width: 60%; }
+  .red-bg img {
+    right: 2em;
+    top: 2em;
+    width: 33.33%; }
+  .tout.red-bg .tout-content--copy {
+    width: 100%; } }
