@@ -4,10 +4,9 @@ html {
 
 h3.eyebrow {
   color: #00ADA4;
-  font-size: 1rem;
+  font-size: 1.5rem;
   font-weight: 700;
-  margin: 0;
-  text-transform: uppercase; }
+  margin: 0; }
 
 h4 {
   font-size: 1.25em;
@@ -323,6 +322,10 @@ a.button-secondary {
   .tout.red-bg .tout-content--copy {
     color: #FFFFFF;
     width: 55%; }
+  .tout.red-bg .tout-content--cta {
+    color: #FFFFFF; }
+    .tout.red-bg .tout-content--cta:hover {
+      color: #000000; }
 
 .red-bg img {
   max-height: 550px;
@@ -330,6 +333,33 @@ a.button-secondary {
   right: 0;
   top: 4.5rem;
   width: 45%; }
+
+.full-width-image-article-light > div.ribbon {
+  background: #E41F35;
+  bottom: 0;
+  height: auto;
+  left: 0;
+  padding: 1.5em 5.5%;
+  position: absolute;
+  right: 0;
+  top: auto;
+  width: 100%; }
+
+.full-width-image-article-light > p.ribbon-text {
+  bottom: 0;
+  height: auto;
+  left: 0;
+  line-height: 1;
+  margin: 0;
+  padding: 1rem 5.5%;
+  position: absolute;
+  right: 0;
+  top: auto;
+  width: 100%;
+  z-index: 10; }
+
+.multiply {
+  mix-blend-mode: multiply; }
 
 .full-width-tab .tabs {
   display: flex;
