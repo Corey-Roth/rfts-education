@@ -3,7 +3,6 @@ html {
   font-size: 16px; }
 
 h3.eyebrow {
-  color: #00ADA4;
   font-size: 1.5rem;
   font-weight: 700;
   margin: 0; }
@@ -19,6 +18,9 @@ ul {
 
 li {
   padding: 0.25rem 0; }
+
+.indented {
+  padding-left: 1.5em; }
 
 .unstyled-list {
   list-style-type: none; }
@@ -301,7 +303,7 @@ a.button-secondary {
 .padded-row {
   display: flex;
   flex-wrap: wrap; }
-  .padded-row div {
+  .padded-row > div {
     margin-bottom: 4.5rem;
     padding: 0 2rem;
     padding-left: 4.5rem; }
@@ -309,6 +311,17 @@ a.button-secondary {
     float: left;
     margin-left: -4.5rem;
     max-width: 3rem; }
+
+.accordion-heading {
+  cursor: pointer; }
+  .accordion-heading:hover {
+    color: #E41F35; }
+
+.question {
+  padding-left: 1.75rem; }
+  .question h3 {
+    position: relative;
+    top: -3px; }
 
 .tout.red-bg {
   background: #E41F35;
@@ -378,7 +391,7 @@ a.button-secondary {
   .tab.active:after {
     border-left: 1rem solid transparent;
     border-right: 1rem solid transparent;
-    border-bottom: 1rem solid #F0E8E1;
+    border-bottom: 1rem solid #D3E8F9;
     bottom: -1rem;
     content: "";
     height: 0;
@@ -387,13 +400,13 @@ a.button-secondary {
     width: 0; }
 
 .tab-content {
-  background: #F0E8E1;
+  background: #D3E8F9;
   height: 40vw;
   max-height: 37rem;
   overflow: hidden; }
 
 .tabbed-container {
-  background: #F0E8E1;
+  background: #D3E8F9;
   margin: 0;
   padding: 4.5rem; }
   .tabbed-container h3 {

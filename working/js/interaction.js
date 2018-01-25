@@ -83,10 +83,18 @@ function tabListener() {
 	$('.tabbed-container:last-of-type').fadeOut();
 }
 
+(function openAccordion() {
+  $('*[data-accordion="accordion-title"]').click(function(){
+    $(this).next('*[data-accordion="accordion-body"]').slideToggle('100ms');
+    $(this).toggleClass('collapsed');
+  });
+}());
+
 
 
 
 
 $(document).ready(function() {
 	tabListener();
+  $('*[data-accordion="accordion-body"]').slideUp();
 });

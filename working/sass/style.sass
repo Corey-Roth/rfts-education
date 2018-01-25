@@ -3,6 +3,7 @@ $brand-dark: #8B0000
 $white: #FFFFFF
 $grey: #AFAAA7
 $lightgrey: #F0E8E1
+$blue: #D3E8F9
 $black: #000000
 $teal: #00ADA4
 
@@ -10,7 +11,7 @@ html
 	font-size: 16px
 
 h3.eyebrow
-	color: $teal
+	//color: $teal
 	font-size: 1.5rem
 	font-weight: 700
 	margin: 0
@@ -26,6 +27,9 @@ ul
 
 li
 	padding: 0.25rem 0
+
+.indented
+	padding-left: 1.5em
 
 .unstyled-list
 	list-style-type: none
@@ -344,7 +348,7 @@ a.button-secondary
 .padded-row
 	display: flex
 	flex-wrap: wrap
-	div
+	> div
 		margin-bottom: 4.5rem
 		padding: 0 2rem
 		padding-left: 4.5rem
@@ -352,6 +356,18 @@ a.button-secondary
 		float: left
 		margin-left: -4.5rem
 		max-width: 3rem
+
+.accordion-heading
+	cursor: pointer
+	&:hover
+		color: $brand
+
+.question
+	padding-left: 1.75rem
+	h3
+		position: relative
+		top: -3px
+
 
 
 
@@ -436,7 +452,7 @@ a.button-secondary
 	&:after
 		border-left: 1rem solid transparent
 		border-right: 1rem solid transparent
-		border-bottom: 1rem solid $lightgrey
+		border-bottom: 1rem solid $blue
 		bottom: -1rem
 		content: ""
 		height: 0
@@ -445,14 +461,14 @@ a.button-secondary
 		width: 0
 
 .tab-content
-	background: $lightgrey
+	background: $blue
 	height: 40vw
 	max-height: 37rem
 	overflow: hidden
 
 
 .tabbed-container
-	background: $lightgrey
+	background: $blue
 	margin: 0
 	padding: 4.5rem
 	h3
