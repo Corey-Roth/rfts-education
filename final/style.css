@@ -260,7 +260,7 @@ a.button-secondary {
   align-items: center;
   background: #FFFFFF;
   border-bottom: 1px solid #AFAAA7;
-  box-shadow: 0 2rem 2rem -2rem rgba(20, 0, 0, 0.16);
+  box-shadow: 0 2rem 2rem -2rem rgba(20, 0, 0, 0.33);
   display: flex;
   justify-content: space-between;
   padding: 1rem 12.5%;
@@ -276,6 +276,20 @@ a.button-secondary {
       background: #8B0000;
       color: #FFFFFF; }
 
+.red-bg {
+  background: #E41F35;
+  border-bottom: 1px solid #FFFFFF;
+  color: #FFFFFF;
+  margin-bottom: 3em;
+  width: auto; }
+  .red-bg .button-primary {
+    background: #FFFFFF;
+    color: #333333; }
+    .red-bg .button-primary:hover {
+      background: #FFFFFF;
+      color: #E41F35;
+      text-decoration: none; }
+
 .jump-links a {
   text-align: center;
   font-size: 1em;
@@ -289,6 +303,12 @@ a.button-secondary {
 .jump-links .active-jump {
   font-weight: 700;
   color: #E41F35; }
+
+.red-bg a {
+  color: #FFFFFF; }
+  .red-bg a:hover {
+    color: #FFFFFF;
+    text-decoration: underline; }
 
 .grid-row-4 {
   display: grid;
@@ -327,7 +347,8 @@ a.button-secondary {
   background: #E41F35;
   color: #FFFFFF;
   height: auto;
-  padding: 4.5rem;
+  margin-bottom: -3em;
+  padding: 0 4.5rem 4.5rem;
   position: relative; }
   .tout.red-bg .tout-content--heading {
     padding-top: 0;
@@ -344,7 +365,7 @@ a.button-secondary {
   max-height: 550px;
   position: absolute;
   right: 0;
-  top: 4.5rem;
+  top: 7.5rem;
   width: 45%; }
 
 .full-width-image-article-light > div.ribbon {
@@ -360,6 +381,7 @@ a.button-secondary {
 
 .full-width-image-article-light > p.ribbon-text {
   bottom: 0;
+  font-weight: 700;
   height: auto;
   left: 0;
   line-height: 1;
@@ -373,6 +395,11 @@ a.button-secondary {
 
 .multiply {
   mix-blend-mode: multiply; }
+
+.full-width-image-article-light > div .banner-image-inline {
+  height: auto;
+  max-width: 50%;
+  position: static; }
 
 .full-width-tab .tabs {
   display: flex;
@@ -443,6 +470,9 @@ a.button-secondary {
 
 .pb-0 {
   padding-bottom: 0 !important; }
+
+.pt-48 {
+  padding-top: 3rem; }
 
 .gutter-escape {
   margin-left: -70px;
@@ -742,7 +772,9 @@ li .small {
   .full-width-tab .tab {
     font-size: 1.5em; }
   .tabbed-container, .tout.red-bg {
-    padding: 3rem 5.5vw; } }
+    padding: 3rem 5.5vw; }
+  .tout.red-bg {
+    padding-top: 0; } }
 
 @media (min-width: 992px) {
   .tout {
@@ -750,7 +782,9 @@ li .small {
   .inset {
     padding: 2rem 8.33%; }
   .header h2 {
-    padding-right: 70px; } }
+    padding-right: 70px; }
+  .pt-48 {
+    padding-top: 3rem; } }
 
 @media (max-width: 991px) {
   .jump-links {
@@ -767,7 +801,8 @@ li .small {
     font-size: 2em; }
   .banner-copy h2 {
     font-size: 2.5em;
-    letter-spacing: -0.0125em; }
+    letter-spacing: -0.0125em;
+    width: 66.66%; }
   .red-bg img {
     max-height: 25rem; }
   .tab-content {
@@ -925,7 +960,17 @@ li .small {
   .tabbed-container {
     padding: 2rem; }
   .button-primary + .button-secondary {
-    margin-left: 0; } }
+    margin-left: 0; }
+  .full-width-image-article-light > p.ribbon-text, .full-width-image-article-light > div.ribbon {
+    bottom: auto;
+    color: #FFFFFF;
+    font-weight: 300;
+    top: calc(70vw - 6rem); }
+  .full-width-image-article-light > div.ribbon {
+    padding: 3em; }
+  .full-width-image-article-light > div .banner-image-inline {
+    margin-bottom: 2em;
+    max-width: 100%; } }
 
 @media (max-width: 540px) {
   .tab-content {
@@ -946,11 +991,13 @@ li .small {
   .button-primary + .button-secondary {
     margin-left: 0; }
   .jump-links {
-    flex-wrap: wrap;
+    display: block;
     padding: 1em; }
     .jump-links a {
+      display: block;
       font-size: 14px;
-      width: 50%; }
+      margin: 1rem 0;
+      width: 100%; }
     .jump-links .button-primary {
       padding: 0.75rem 1rem; }
   .tout.red-bg .tout-content--heading {
@@ -959,7 +1006,7 @@ li .small {
     width: 60%; }
   .red-bg img {
     right: 2em;
-    top: 2em;
+    top: 80vw;
     width: 33.33%; }
   .tout.red-bg .tout-content--copy {
     width: 100%; } }

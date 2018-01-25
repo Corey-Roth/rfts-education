@@ -6,6 +6,7 @@ $lightgrey: #F0E8E1
 $blue: #D3E8F9
 $black: #000000
 $teal: #00ADA4
+$charcoal: #333333
 
 html
 	font-size: 16px
@@ -300,7 +301,7 @@ a.button-secondary
 	align-items: center
 	background: $white
 	border-bottom: 1px solid $grey
-	box-shadow: 0 2rem 2rem -2rem rgba(20, 0, 0, 0.16)
+	box-shadow: 0 2rem 2rem -2rem rgba(20, 0, 0, 0.33)
 	display: flex
 	justify-content: space-between
 	padding: 1rem 12.5%
@@ -316,6 +317,20 @@ a.button-secondary
 			background: $brand-dark
 			color: $white
 
+.red-bg
+	background: $brand
+	border-bottom: 1px solid $white
+	color: $white
+	margin-bottom: 3em
+	width: auto
+	.button-primary
+		background: $white
+		color: $charcoal
+		&:hover
+			background: $white
+			color: $brand
+			text-decoration: none
+
 .jump-links a
 	text-align: center
 	font-size: 1em
@@ -330,7 +345,11 @@ a.button-secondary
 	font-weight: 700
 	color: $brand
 
-
+.red-bg a
+	color: $white
+	&:hover
+		color: $white
+		text-decoration: underline
 
 
 
@@ -378,7 +397,8 @@ a.button-secondary
 	background: $brand
 	color: $white
 	height: auto
-	padding: 4.5rem
+	margin-bottom: -3em
+	padding: 0 4.5rem 4.5rem
 	position: relative
 	.tout-content--heading
 		padding-top: 0
@@ -395,7 +415,7 @@ a.button-secondary
 	max-height: 550px
 	position: absolute
 	right: 0
-	top: 4.5rem
+	top: 7.5rem
 	width: 45%
 
 
@@ -416,6 +436,7 @@ a.button-secondary
 
 .full-width-image-article-light > p.ribbon-text
 	bottom: 0
+	font-weight: 700
 	height: auto
 	left: 0
 	line-height: 1
@@ -429,6 +450,16 @@ a.button-secondary
 
 .multiply
 	mix-blend-mode: multiply
+
+
+
+
+
+//banner image
+.full-width-image-article-light > div .banner-image-inline
+	height: auto
+	max-width: 50%
+	position: static
 
 
 
@@ -514,6 +545,9 @@ a.button-secondary
 
 .pb-0
 	padding-bottom: 0 !important
+
+.pt-48
+	padding-top: 3rem
 
 .gutter-escape
 	margin-left: -70px
@@ -602,6 +636,9 @@ li .small
 	.tabbed-container, .tout.red-bg
 		padding: 3rem 5.5vw
 
+	.tout.red-bg
+		padding-top: 0
+
 @media (min-width: 992px)
 	.tout
 		padding: 6rem 0 0
@@ -612,6 +649,9 @@ li .small
 
 	.header h2
 		padding-right: 70px
+
+	.pt-48
+		padding-top: 3rem
 
 
 
@@ -639,6 +679,7 @@ li .small
 	.banner-copy h2
 		font-size: 2.5em
 		letter-spacing: -0.0125em
+		width: 66.66%
 
 	.red-bg img
 		max-height: 25rem
@@ -880,6 +921,19 @@ li .small
 	.button-primary + .button-secondary
 		margin-left: 0
 
+	.full-width-image-article-light > p.ribbon-text, .full-width-image-article-light > div.ribbon
+		bottom: auto
+		color: $white
+		font-weight: 300
+		top: calc(70vw - 6rem)
+
+	.full-width-image-article-light > div.ribbon
+		padding: 3em
+
+	.full-width-image-article-light > div .banner-image-inline
+		margin-bottom: 2em
+		max-width: 100%
+
 
 @media (max-width: 540px)
 
@@ -909,11 +963,13 @@ li .small
 		margin-left: 0
 
 	.jump-links
-		flex-wrap: wrap
+		display: block
 		padding: 1em
 		a
+			display: block
 			font-size: 14px
-			width: 50%
+			margin: 1rem 0
+			width: 100%
 		.button-primary
 			padding: 0.75rem 1rem
 
@@ -924,7 +980,7 @@ li .small
 
 	.red-bg img
 		right: 2em
-		top: 2em
+		top: 80vw
 		width: 33.33%
 
 	.tout.red-bg .tout-content--copy
