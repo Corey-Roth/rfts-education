@@ -259,7 +259,6 @@ a.button-secondary {
 .jump-links {
   align-items: center;
   background: #FFFFFF;
-  border-bottom: 1px solid #AFAAA7;
   box-shadow: 0 2rem 2rem -2rem rgba(20, 0, 0, 0.33);
   display: flex;
   justify-content: space-between;
@@ -276,20 +275,6 @@ a.button-secondary {
       background: #8B0000;
       color: #FFFFFF; }
 
-.red-bg {
-  background: #E41F35;
-  border-bottom: 1px solid #FFFFFF;
-  color: #FFFFFF;
-  margin-bottom: 3em;
-  width: auto; }
-  .red-bg .button-primary {
-    background: #FFFFFF;
-    color: #333333; }
-    .red-bg .button-primary:hover {
-      background: #FFFFFF;
-      color: #E41F35;
-      text-decoration: none; }
-
 .jump-links a {
   text-align: center;
   font-size: 1em;
@@ -303,12 +288,6 @@ a.button-secondary {
 .jump-links .active-jump {
   font-weight: 700;
   color: #E41F35; }
-
-.red-bg a {
-  color: #FFFFFF; }
-  .red-bg a:hover {
-    color: #FFFFFF;
-    text-decoration: underline; }
 
 .grid-row-4 {
   display: grid;
@@ -343,25 +322,29 @@ a.button-secondary {
     position: relative;
     top: -3px; }
 
-.tout.red-bg {
-  background: #E41F35;
-  color: #FFFFFF;
+.unstyled-list li a {
+  color: #E41F35 !important; }
+
+.tout.tan-bg {
+  background: #D6CFC9;
+  border-top: 1px solid #CCCCCC;
+  color: #333333;
   height: auto;
   margin-bottom: -3em;
-  padding: 0 4.5rem 4.5rem;
+  padding: 4.5rem;
   position: relative; }
-  .tout.red-bg .tout-content--heading {
+  .tout.tan-bg .tout-content--heading {
     padding-top: 0;
     width: 55%; }
-  .tout.red-bg .tout-content--copy {
-    color: #FFFFFF;
+  .tout.tan-bg .tout-content--copy {
+    color: #333333;
     width: 55%; }
-  .tout.red-bg .tout-content--cta {
-    color: #FFFFFF; }
-    .tout.red-bg .tout-content--cta:hover {
+  .tout.tan-bg .tout-content--cta {
+    color: #E41F35; }
+    .tout.tan-bg .tout-content--cta:hover {
       color: #000000; }
 
-.red-bg img {
+.tan-bg img {
   max-height: 550px;
   position: absolute;
   right: 0;
@@ -759,7 +742,7 @@ li .small {
 
 /** Media Queries **/
 @media (max-width: 1280px) {
-  .red-bg img {
+  .tan-bg img {
     max-height: 25rem; }
   .tab-content {
     height: 60vw;
@@ -771,9 +754,9 @@ li .small {
     padding-left: 5.5vw; }
   .full-width-tab .tab {
     font-size: 1.5em; }
-  .tabbed-container, .tout.red-bg {
+  .tabbed-container, .tout.tan-bg {
     padding: 3rem 5.5vw; }
-  .tout.red-bg {
+  .tout.tan-bg {
     padding-top: 0; } }
 
 @media (min-width: 992px) {
@@ -803,7 +786,7 @@ li .small {
     font-size: 2.5em;
     letter-spacing: -0.0125em;
     width: 66.66%; }
-  .red-bg img {
+  .tan-bg img {
     max-height: 25rem; }
   .tab-content {
     height: auto;
@@ -931,15 +914,15 @@ li .small {
   .grid-row-4 {
     display: block;
     padding: 0 2rem; }
-  .tout.red-bg .tout-content--heading {
+  .tout.tan-bg .tout-content--heading {
     margin: 0;
     width: 100%; }
-  .tout.red-bg .tout-content--copy {
+  .tout.tan-bg .tout-content--copy {
     width: 40%;
     width: 60%; }
-    .tout.red-bg .tout-content--copy .red-bg img {
+    .tout.tan-bg .tout-content--copy .tan-bg img {
       right: -2rem; }
-  .tout.red-bg {
+  .tout.tan-bg {
     margin-bottom: 1rem;
     padding: 2rem 3rem 0; }
   .inset-mobile {
@@ -1000,13 +983,13 @@ li .small {
       width: 100%; }
     .jump-links .button-primary {
       padding: 0.75rem 1rem; }
-  .tout.red-bg .tout-content--heading {
+  .tout.tan-bg .tout-content--heading {
     font-size: 1.5em;
     margin-bottom: 1em;
     width: 60%; }
-  .red-bg img {
+  .tan-bg img {
     right: 2em;
     top: 80vw;
     width: 33.33%; }
-  .tout.red-bg .tout-content--copy {
+  .tout.tan-bg .tout-content--copy {
     width: 100%; } }

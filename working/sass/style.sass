@@ -3,6 +3,7 @@ $brand-dark: #8B0000
 $white: #FFFFFF
 $grey: #AFAAA7
 $lightgrey: #F0E8E1
+$darkgrey: #D6CFC9
 $blue: #D3E8F9
 $black: #000000
 $teal: #00ADA4
@@ -300,7 +301,6 @@ a.button-secondary
 .jump-links
 	align-items: center
 	background: $white
-	border-bottom: 1px solid $grey
 	box-shadow: 0 2rem 2rem -2rem rgba(20, 0, 0, 0.33)
 	display: flex
 	justify-content: space-between
@@ -317,20 +317,6 @@ a.button-secondary
 			background: $brand-dark
 			color: $white
 
-.red-bg
-	background: $brand
-	border-bottom: 1px solid $white
-	color: $white
-	margin-bottom: 3em
-	width: auto
-	.button-primary
-		background: $white
-		color: $charcoal
-		&:hover
-			background: $white
-			color: $brand
-			text-decoration: none
-
 .jump-links a
 	text-align: center
 	font-size: 1em
@@ -345,11 +331,7 @@ a.button-secondary
 	font-weight: 700
 	color: $brand
 
-.red-bg a
-	color: $white
-	&:hover
-		color: $white
-		text-decoration: underline
+
 
 
 
@@ -387,31 +369,36 @@ a.button-secondary
 		position: relative
 		top: -3px
 
+.unstyled-list
+	li a
+		color: $brand !important
+
 
 
 
 
 
 //red bg
-.tout.red-bg
-	background: $brand
-	color: $white
+.tout.tan-bg
+	background: $darkgrey
+	border-top: 1px solid #CCCCCC
+	color: $charcoal
 	height: auto
 	margin-bottom: -3em
-	padding: 0 4.5rem 4.5rem
+	padding: 4.5rem
 	position: relative
 	.tout-content--heading
 		padding-top: 0
 		width: 55%
 	.tout-content--copy
-		color: $white
+		color: $charcoal
 		width: 55%
 	.tout-content--cta
-		color: $white
+		color: $brand
 		&:hover
 			color: $black
 
-.red-bg img
+.tan-bg img
 	max-height: 550px
 	position: absolute
 	right: 0
@@ -616,7 +603,7 @@ li .small
 
 /** Media Queries **/
 @media (max-width: 1280px)
-	.red-bg img
+	.tan-bg img
 		max-height: 25rem
 
 	.tab-content
@@ -633,10 +620,10 @@ li .small
 	.full-width-tab .tab
 		font-size: 1.5em
 
-	.tabbed-container, .tout.red-bg
+	.tabbed-container, .tout.tan-bg
 		padding: 3rem 5.5vw
 
-	.tout.red-bg
+	.tout.tan-bg
 		padding-top: 0
 
 @media (min-width: 992px)
@@ -681,7 +668,7 @@ li .small
 		letter-spacing: -0.0125em
 		width: 66.66%
 
-	.red-bg img
+	.tan-bg img
 		max-height: 25rem
 
 	.tab-content
@@ -879,18 +866,18 @@ li .small
 		display: block
 		padding: 0 2rem
 
-	.tout.red-bg .tout-content--heading
+	.tout.tan-bg .tout-content--heading
 		margin: 0
 		width: 100%
 
-	.tout.red-bg .tout-content--copy
+	.tout.tan-bg .tout-content--copy
 		width: 40%
 
- 	.red-bg img
+ 	.tan-bg img
  		right: -2rem
 		width: 60%
 
-	.tout.red-bg
+	.tout.tan-bg
 		margin-bottom: 1rem
 		padding: 2rem 3rem 0
 
@@ -973,17 +960,17 @@ li .small
 		.button-primary
 			padding: 0.75rem 1rem
 
-	.tout.red-bg .tout-content--heading
+	.tout.tan-bg .tout-content--heading
 		font-size: 1.5em
 		margin-bottom: 1em
 		width: 60%
 
-	.red-bg img
+	.tan-bg img
 		right: 2em
 		top: 80vw
 		width: 33.33%
 
-	.tout.red-bg .tout-content--copy
+	.tout.tan-bg .tout-content--copy
 		width: 100%
 
 
