@@ -1,0 +1,65 @@
+//Jump links
+.jump-links
+	align-items: center
+	background: $white
+	box-shadow: 0 2rem 2rem -2rem rgba(20, 0, 0, 0.33)
+	display: flex
+	justify-content: space-between
+	padding: 1rem 12.5%
+	width: 100%
+	.button-primary
+		background: $brand
+		border-radius: 4px
+		box-shadow: 0 2px 2px 0 rgba(20,0,0,0.16), 0 0 0 1px rgba(20,0,0,0.08)
+		color: $white
+		padding: 1rem 1.5rem
+		transition: all 200ms cubic-bezier(0.4, 0.0, 0.2, 1)
+		&:hover
+			background: $brand-dark
+			color: $white
+
+.jump-links a, .jump-links button
+	background: none
+	border: 0 none
+	text-align: center
+	font-size: 1em
+	font-weight: 400
+	color: black
+
+.jump-links a:hover, .jump-links button:hover
+	color: $brand
+	text-decoration: none
+
+.jump-links .active
+	font-weight: 700
+	color: $brand
+
+.tout.video-nav
+	border-bottom: 0 none
+	padding: 1rem 0
+	position: relative
+	z-index: 10
+
+.video-nav .jump-links
+	background: none
+	border: 0 none
+	padding: 0 5.5%
+	.button-primary
+		min-width: 8rem
+
+.video-nav.white
+	button
+		color: $white
+	.active
+		color: $white
+
+.jump-links button.disabled
+	background: $lightgrey
+	box-shadow: 0 0 0 0
+	color: $grey
+	cursor: not-allowed
+	&:hover
+		background: $lightgrey
+		box-shadow: 0 0 0 0
+		color: $grey
+		transform: translateY(0px)

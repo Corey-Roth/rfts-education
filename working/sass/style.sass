@@ -1,22 +1,24 @@
-$brand: #E41F35
-$brand-dark: #8B0000
-$white: #FFFFFF
-$grey: #AFAAA7
-$lightgrey: #F0E8E1
-$darkgrey: #D6CFC9
-$blue: #D3E8F9
-$black: #000000
-$teal: #00ADA4
-$charcoal: #333333
+@import "var"
 
 html
 	font-size: 16px
+
+h3
+	margin-bottom: 0.5rem
 
 h3.eyebrow
 	//color: $teal
 	font-size: 1.5rem
 	font-weight: 700
 	margin: 0
+
+h3.small
+	font-size: 1.25rem
+	font-weight: 700
+
+h2.light
+	font-size: 2rem
+	font-weight: 300
 
 h4
 	font-size: 1.25em
@@ -29,12 +31,6 @@ ul
 
 li
 	padding: 0.25rem 0
-
-.indented
-	padding-left: 1.5em
-
-.unstyled-list
-	list-style-type: none
 
 .footer-desktop, .footer-tablet, .footer-mobile
 	background-image: url('./assets/black-footer.png')
@@ -75,7 +71,7 @@ a.button-primary, button.button-primary
 	&:hover
 		transform: translatey(1px)
 
-a.button-secondary
+a.button-secondary, button.button-secondary
 	@extend a.button-primary
 	background: $white
 	color: $black
@@ -204,15 +200,6 @@ a.button-secondary
 .centered .button-primary
 	margin-top: 15px
 
-
-.black
-	background: #1a1a1a
-
-
-.black h2, .black p
-	color: $white
-
-
 .tout.color-block
 	margin-left: calc(-5.5% - 7.5px)
 	margin-right: calc(-5.5% - 8px)
@@ -227,9 +214,7 @@ a.button-secondary
 
 
 
-.footer-tuck
-	margin-bottom: -80px
-	padding-bottom: 60px
+
 
 
 
@@ -297,39 +282,7 @@ a.button-secondary
 	a.button-primary
 		display: none
 
-//Jump links
-.jump-links
-	align-items: center
-	background: $white
-	box-shadow: 0 2rem 2rem -2rem rgba(20, 0, 0, 0.33)
-	display: flex
-	justify-content: space-between
-	padding: 1rem 12.5%
-	width: 100%
-	.button-primary
-		background: $brand
-		border-radius: 4px
-		box-shadow: 0 2px 2px 0 rgba(20,0,0,0.16), 0 0 0 1px rgba(20,0,0,0.08)
-		color: $white
-		padding: 1rem 1.5rem
-		transition: all 200ms cubic-bezier(0.4, 0.0, 0.2, 1)
-		&:hover
-			background: $brand-dark
-			color: $white
-
-.jump-links a
-	text-align: center
-	font-size: 1em
-	font-weight: 400
-	color: black
-
-.jump-links a:hover
-	color: $brand
-	text-decoration: none
-
-.jump-links .active-jump
-	font-weight: 700
-	color: $brand
+@import "jump-links"
 
 
 
@@ -369,9 +322,7 @@ a.button-secondary
 		position: relative
 		top: -3px
 
-.unstyled-list
-	li a
-		color: $brand !important
+
 
 
 
@@ -402,7 +353,7 @@ a.button-secondary
 	max-height: 550px
 	position: absolute
 	right: 0
-	top: 7.5rem
+	top: 4.5rem
 	width: 45%
 
 
@@ -435,8 +386,6 @@ a.button-secondary
 	width: 100%
 	z-index: 10
 
-.multiply
-	mix-blend-mode: multiply
 
 
 
@@ -523,29 +472,7 @@ a.button-secondary
 
 
 
-//utilities
-.mb-32
-	margin-bottom: 3rem
-
-.mb-64
-	margin-bottom: 4rem
-
-.pb-0
-	padding-bottom: 0 !important
-
-.pt-48
-	padding-top: 3rem
-
-.gutter-escape
-	margin-left: -70px
-	margin-right: -71px
-
-li .small
-	display: block
-	font-size: 14px
-
-.reverse h2, .reverse p
-	color: $white
+@import "utilities"
 
 .banner-illustrated
 	height: 40vw
@@ -555,6 +482,23 @@ li .small
 	.banner-copy
 		position: relative
 		z-index: 1
+
+.img-cover
+	margin-bottom: -5em
+	margin-top: -5.5em
+	min-height: 40vw
+	overflow: hidden
+	padding-top: 5em
+	position: relative
+	.tout
+		margin-left: 5.5%
+		max-width: 50%
+		position: relative
+		z-index: 2
+	h2
+		font-size: 4em
+	p
+		font-size: 1.5em
 
 .background-img
 	bottom: 0
@@ -594,6 +538,174 @@ li .small
 .banner-copy.large-copy p
 	font-size: 1.5em
 	font-weight: 400
+
+.tout.purple-bg
+	background: $legacy-teal
+	background: -moz-linear-gradient(left, $legacy-teal 0%, $legacy-blue 100%)
+	background: -webkit-linear-gradient(left, $legacy-teal 0%,$legacy-blue 100%)
+	background: linear-gradient(to right, $legacy-teal 0%,$legacy-blue 100%)
+	color: $charcoal
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$legacy-teal', endColorstr='$legacy-blue',GradientType=1 )
+	margin-bottom: -10em
+	margin-top: 5em
+	padding-bottom: 5em
+
+
+
+
+
+//flex row
+.flex-row
+	display: flex
+	flex-wrap: wrap
+	hr
+		width: 100%
+
+.tout.flex-row
+	padding-top: 3rem
+
+.header-row
+	background: #1d83d8
+	background: -moz-linear-gradient(left, #1d83d8 0%, #6aade5 100%)
+	background: -webkit-linear-gradient(left, #1d83d8 0%,#6aade5 100%)
+	background: linear-gradient(to right, #1d83d8 0%,#6aade5 100%)
+	color: $white
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1d83d8', endColorstr='#6aade5',GradientType=1 )
+	margin-top: -6rem
+	padding: 10rem 0 0
+	h1
+		margin-top: 0
+		margin-bottom: 0.5rem
+		max-width: 100%
+	p
+		font-size: 1.25em
+		font-weight: 300
+	.tout
+		align-items: center
+		padding-top: 0
+	img
+		margin-bottom: -1px
+		//margin-top: 1rem
+		width: 100%
+
+.mw-60
+	margin-left: auto
+	margin-right: auto
+	max-width: 60rem
+
+.mw-80
+	margin-left: auto
+	margin-right: auto
+	max-width: 80rem
+
+//decorative container
+.decorative-container
+	background: $white
+	border-radius: 0.25rem
+	box-shadow: 0 3px 5px 0 rgba(20,0,0,0.16), 0 0 0 1px rgba(20,0,0,0.08)
+	padding: 1rem
+	h3
+		font-weight: 700
+
+//instructions
+.instructions
+	h2
+		font-size: 1.5em
+		font-weight: 700
+	p
+		font-size: 1.25em
+		font-weight: 300
+
+//video frame
+.video-frame
+	background: $lightgrey
+	border-radius: 0.25rem
+	.caption
+		padding: 1rem
+	.video iframe
+		border-radius: 0.25rem 0.25rem 0 0
+
+.caption h2
+	font-size: 2rem
+	font-weight: 300
+
+.caption p
+	font-size: 1.25em
+	font-weight: 300
+
+//main
+main
+	min-height: 50vh
+	padding-bottom: 5em
+
+//checked list
+.checked-list
+	list-style-type: none
+	margin-bottom: 2rem
+	> li
+		padding-left: 1.5rem
+	> li:before
+		color: $charcoal
+		content: '✔'
+		font-size: 1.5em
+		font-weight: 700
+		line-height: 1
+		margin-left: -1.5rem
+		padding-right: 0.25em
+		position: relative
+		top: 2px
+
+li ul
+	padding-left: 2rem
+
+.nav-link
+	cursor: pointer
+	font-size: 1.125em
+	font-weight: 300
+	&:hover
+		color: $brand
+
+.checked-list .li-list:before
+	content: ""
+	display: none
+	padding: 0
+
+.li-list ul
+	margin: 0
+	padding: 0
+
+//video list
+.video-list
+	list-style-type: none
+	margin-bottom: 2rem
+	li
+		border-bottom: 1px solid $lightgrey
+		font-size: 1.5rem
+		padding: 0.5rem 0 0 2rem
+		&:last-of-type
+			border: 0 none
+		&:hover
+			color: $brand
+			cursor: pointer
+
+.video-list .active
+	color: $brand
+	padding-left: 0
+	&:before
+		content: "▶ "
+
+.blue-bg
+	background: #1d83d8
+	background: -moz-linear-gradient(left, #1d83d8 0%, #6aade5 100%)
+	background: -webkit-linear-gradient(left, #1d83d8 0%,#6aade5 100%)
+	background: linear-gradient(to right, #1d83d8 0%,#6aade5 100%)
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1d83d8', endColorstr='#6aade5',GradientType=1 )
+	.video-frame
+		background: $white
+		box-shadow: 0 3px 5px 0 rgba(20,0,0,0.16), 0 0 0 1px rgba(20,0,0,0.08)
+	.white
+		color: $white
+
 
 @import 'video'
 
@@ -639,6 +751,19 @@ li .small
 
 	.pt-48
 		padding-top: 3rem
+
+	.tout.pt-128
+		padding-top: 8rem
+
+	.tout.pt-64
+		padding-top: 4rem
+
+	.tout.pb-64
+		padding-bottom: 4rem
+
+	.tout.default-gutter
+		padding-left: 4.5rem
+		padding-right: 4.5rem
 
 
 
