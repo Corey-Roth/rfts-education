@@ -49,13 +49,13 @@
 
     <div class="article-main-container default-gutter default-bottom-padding">
 
-        <section class="tout gutter-escape video-nav white">
+        <section class="tout gutter-escape video-nav">
             <div class="jump-links">
                 <button data-nav="previous" class="button-primary disabled">Previous</button>
                 <button class="js active" data-slide="#one">Getting started</button>
                 <button class="js" data-slide="#two">Deposits</button>
                 <button class="js" data-slide="#three">Exceptions</button>
-                <button class="js" data-slide="#four">Managing claims</button>
+                <button class="js" data-slide="#four">Managing payments</button>
                 <button class="js" data-slide="#five">Pulling reports</button>
                 <button class="js" data-slide="#six">Go to Reconciliation</button>
                 <button data-nav="next" class="button-primary">Next</button>
@@ -140,13 +140,17 @@
                 </div>
                 <div class="col-md-5 instructions">
                     <h2>Check your deposits</h2>
-                    <p>Open Central Pay from the left menu, then select Payments</p>
-                    <p>Enter in a date range, then start your search</p>
-                    <p>To see details, select the Check number (middle of screen)</p>
+                    <ol>
+                        <li>Open Central Pay from the left menu, then select Payments</li>
+                        <li>Enter in a date range, then start your search</li>
+                        <li>To see details, select the Check number (middle of screen)</li>
+                    </ol>
                     <h2>Verify your deposits</h2>
-                    <p>Open Reconciliation, then select Deposits</p>
-                    <p>Select the check box, select Verify Deposit, then the deposit date</p>
-                    <p>Tip: you can add comments to deposits by clicking on the pencil</p>
+                    <ol>
+                        <li>Open Reconciliation, then select Deposits</li>
+                        <li>Select the check box, select Verify Deposit, then the deposit date</li>
+                    </ol>
+                    <p><em>Tip: you can add comments to deposits by clicking on the pencil</em></p>
                 </div>
             </section>
         </main>
@@ -163,41 +167,73 @@
                 </div>
                 <div class="col-md-5 instructions">
                     <h2>Work your payment exceptions</h2>
-                    <p>Open Reconciliation from the left menu, then select Payment Exceptions</p>
-                    <p>Select a claim status on the far right</p>
-                    <p>Choose the action you’d like to take with the claim</p>
+                    <ol>
+                        <li>Open Reconciliation from the left menu, then select Payment Exceptions</li>
+                        <li>Select a claim status on the far right</li>
+                        <li>Choose the action you’d like to take with the payment exception claim <a href="#choose">(see below)</a></li>
+                    </ol>
                 </div>
             </section>
             <section class="tout gutter-escape default-gutter purple-bg">
-                <div class="flex-row mw-60">
-                    <div class="col-md-6">
+                <div class="flex-row">
+                    <div class="col-sm-5">
+                        <a name="choose"></a>
                         <h2 class="light">Choose what to do with a payment exception</h2>
                         <p><em>These first two actions removes claims from exceptions and aged receivables.</em></p>
                     </div>
-                    <div class="col-md-6">
-                        <h3 class="small">Write-off under payment and post claim</h3>
-                        <p>Write off the difference and close the claim. The claim will appear on the write-off report.</p>
-                        <h3 class="small">Accept overpayment and post claim</h3>
-                        <p>Closes the claim. The claim difference will appear on the overpayment report.</p>
+                    <div class="col-sm-7">
+                        <div class="flex-row">
+                            <div class="col-md-6">
+                                <h3 class="small">Write-off under payment and post claim</h3>
+                                <p>Write off the difference and close the claim. The claim will appear on the write-off report.</p>
+                            </div>
+                            <div class="col-md-6">
+                                <h3 class="small">Accept overpayment and post claim</h3>
+                                <p>Closes the claim. The claim difference will appear on the overpayment report.</p>
+                            </div>
+                            <hr class="dark"/>
+                            <div class="col-sm-6 col-md-6">
+                                <h3 class="small">Move to dispute queue</h3>
+                                <p>Move the claim from to do to the dispute tab (you are responsible for disputing claims with payers)</p>
+                            </div>
+                            <div class="col-sm-6 col-md-6">
+                                <h3 class="small">Set as a pending offset</h3>
+                                <p>Moves to the reviewed tab. Use for claims you’re waiting on to be reversed or repaid (like paid, reverse, or paid). </p>
+                            </div>
+                            <div class="col-sm-6 col-md-6">
+                                <h3 class="small">Nullify 835 payment detail</h3>
+                                <p>Remove the exception (this should only be used when dispense data is not available, like when transitioning from another reconciliation solution)</p>
+                            </div>
+                            <div class="col-sm-6 col-md-6">
+                                <h3 class="small">Rematch claim and payment</h3>
+                                <p>Match the payment data to the correct dispense data, particularly for split bills.</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="flex-row">
-                    <div class="col-sm-6 col-md-3">
-                        <h3 class="small">Move to dispute queue</h3>
-                        <p>Move the claim from to do to the dispute tab (you are responsible for disputing claims with payers)</p>
+            </section>
+
+
+            <section class="tout flex-row pt-64">
+                <div class="col-md-7 col-md-push-5">
+                    <div class="video-frame">
+                        <div class="video">
+                            <iframe class="sproutvideo-player" src="https://videos.sproutvideo.com/embed/a49ad8b21a12e9c02c/b498b87d8feb0782" width='630' height='315' frameborder='0' allowfullscreen></iframe>
+                        </div>
+                        <div class="caption">
+                            <h2>Why is writing off claims important?</h2>
+                            <p>Writing off claims ensures you’re not overstating your A/R. It also ensures you don’t pay taxes on funds you won’t receive.</p>
+                        </div>
                     </div>
-                    <div class="col-sm-6 col-md-3">
-                        <h3 class="small">Set as a pending offset</h3>
-                        <p>Moves to the reviewed tab. Use for claims you’re waiting on to be reversed or repaid (like paid, reverse, or paid). </p>
-                    </div>
-                    <div class="col-sm-6 col-md-3">
-                        <h3 class="small">Nullify 835 payment detail</h3>
-                        <p>Remove the exception (this should only be used when dispense data is not available, like when transitioning from another reconciliation solution)</p>
-                    </div>
-                    <div class="col-sm-6 col-md-3">
-                        <h3 class="small">Rematch claim and payment</h3>
-                        <p>Match the payment data to the correct dispense data, particularly for split bills.</p>
-                    </div>
+                </div>
+                <div class="col-md-5 instructions col-md-pull-7">
+                    <h2>Work your claim exceptions</h2>
+                    <p>Writing off claims after 60 days</p>
+                    <ol>
+                        <li>Open Reconciliation from the left menu, then select Claim Exceptions</li>
+                        <li>Change the dropdown to >60</li>
+                        <li>Select a claim status and change to write-off for non-payment and post claim</li>
+                    </ol>
                 </div>
             </section>
         </main>
@@ -218,16 +254,18 @@
                 </div>
                 <div class="col-md-5 instructions">
                     <h2>Enter paper EOBs</h2>
-                    <p>Open Reconciliation from the left menu, then select Paper EOBs</p>
-                    <p>Start a new payment</p>
-                    <p>Enter in the payment info, such as check number, date, amount, etc</p>
-                    <p>Select the store, payer, and date range before continuing</p>
-                    <p>Remove any claims not on the remittance by selecting them and using remove checked</p>
-                    <p>You can Complete Payment Batch when your’e ready to close claims</p>
+                    <ol>
+                        <li>Open Reconciliation from the left menu, then select Paper EOBs</li>
+                        <li>Start a new payment</li>
+                        <li>Enter in the payment info, such as check number, date, amount, etc</li>
+                        <li>Select the store, payer, and date range before continuing</li>
+                        <li>Remove any claims not on the remittance by selecting them and using remove checked</li>
+                        <li>You can Complete Payment Batch when your’e ready to close claims</li>
+                    </ol>
                 </div>
             </section>
 
-            <section class="tout flex-row pt-64 mt-64 blue-bg gutter-escape default-gutter pb-64">
+            <section class="tout flex-row pt-64 mt-64 blue-bg gutter-escape default-gutter pb-64 footer-tuck">
                 <div class="col-md-7 col-md-push-5">
                     <div class="video-frame">
                         <div class="video">
@@ -239,32 +277,14 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-5 col-md-pull-7 instructions white">
+                <div class="col-md-5 col-md-pull-7 instructions">
                     <h2>Reconciling e-vouchers</h2>
-                    <p>Open Reconciliation from the left menu, then select Payment Exceptions</p>
-                    <p>Select a claim status on the far right</p>
-                    <p>Move to the dispute queue and set the reason to partially paid</p>
-                    <p>From here, you can enter the paper EOBs</p>
-                </div>
-            </section>
-
-            <section class="tout flex-row pt-64">
-                <div class="col-md-7">
-                    <div class="video-frame">
-                        <div class="video">
-                            <iframe class="sproutvideo-player" src="https://videos.sproutvideo.com/embed/a49ad8b21a12e9c02c/b498b87d8feb0782" width='630' height='315' frameborder='0' allowfullscreen></iframe>
-                        </div>
-                        <div class="caption">
-                            <h2>Why is writing off claims important?</h2>
-                            <p>Writing off claims ensures you’re not overstating your A/R. It also ensures you don’t pay taxes on funds you won’t receive.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-5 instructions">
-                    <h2>Writing off claims after 60 days</h2>
-                    <p>Open Reconciliation from the left menu, then select Claim Exceptions</p>
-                    <p>Change the dropdown to >60</p>
-                    <p>Select a claim status and change to write-off for non-payment and post claim</p>
+                    <ol>
+                        <li>Open Reconciliation from the left menu, then select Payment Exceptions</li>
+                        <li>Select a claim status on the far right</li>
+                        <li>Move to the dispute queue and set the reason to partially paid</li>
+                        <li>From here, you can enter the paper EOBs</li>
+                    </ol>
                 </div>
             </section>
         </main>

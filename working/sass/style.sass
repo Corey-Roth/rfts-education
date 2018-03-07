@@ -25,7 +25,7 @@ h4
 	font-weight: 700
 	margin: 0 0 0.5rem
 
-ul
+ul, ol
 	margin: 0
 	padding: 0
 
@@ -486,7 +486,7 @@ a.button-secondary, button.button-secondary
 .img-cover
 	margin-bottom: -5em
 	margin-top: -5.5em
-	min-height: 40vw
+	min-height: 50vw
 	overflow: hidden
 	padding-top: 5em
 	position: relative
@@ -541,12 +541,11 @@ a.button-secondary, button.button-secondary
 
 .tout.purple-bg
 	background: $legacy-teal
-	background: -moz-linear-gradient(left, $legacy-teal 0%, $legacy-blue 100%)
-	background: -webkit-linear-gradient(left, $legacy-teal 0%,$legacy-blue 100%)
-	background: linear-gradient(to right, $legacy-teal 0%,$legacy-blue 100%)
+	//background: -moz-linear-gradient(left, $legacy-teal 0%, $legacy-blue 100%)
+	//background: -webkit-linear-gradient(left, $legacy-teal 0%,$legacy-blue 100%)
+	//background: linear-gradient(to right, $legacy-teal 0%,$legacy-blue 100%)
 	color: $charcoal
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$legacy-teal', endColorstr='$legacy-blue',GradientType=1 )
-	margin-bottom: -10em
+	//filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$legacy-teal', endColorstr='$legacy-blue',GradientType=1 )
 	margin-top: 5em
 	padding-bottom: 5em
 
@@ -565,12 +564,12 @@ a.button-secondary, button.button-secondary
 	padding-top: 3rem
 
 .header-row
-	background: #1d83d8
-	background: -moz-linear-gradient(left, #1d83d8 0%, #6aade5 100%)
-	background: -webkit-linear-gradient(left, #1d83d8 0%,#6aade5 100%)
-	background: linear-gradient(to right, #1d83d8 0%,#6aade5 100%)
-	color: $white
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1d83d8', endColorstr='#6aade5',GradientType=1 )
+	background: $legacy-teal
+	//background: -moz-linear-gradient(left, $legacy-teal 0%, $legacy-blue 100%)
+	//background: -webkit-linear-gradient(left, $legacy-teal 0%,$legacy-blue 100%)
+	//background: linear-gradient(to right, $legacy-teal 0%,$legacy-blue 100%)
+	color: $charcoal
+	//filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$legacy-teal', endColorstr='$legacy-blue',GradientType=1 )
 	margin-top: -6rem
 	padding: 10rem 0 0
 	h1
@@ -613,8 +612,23 @@ a.button-secondary, button.button-secondary
 		font-size: 1.5em
 		font-weight: 700
 	p
-		font-size: 1.25em
+		font-size: 1.125em
 		font-weight: 300
+	li
+		font-size: 1.125em
+		font-weight: 300
+	ol li
+		padding: 0.5rem 0
+
+
+ol
+	counter-reset: list-counter
+	list-style-type: none
+
+ol li:before
+	content: counter(list-counter) ". "
+	counter-increment: list-counter
+	font-weight: 700
 
 //video frame
 .video-frame
@@ -695,16 +709,22 @@ li ul
 		content: "▶ "
 
 .blue-bg
-	background: #1d83d8
-	background: -moz-linear-gradient(left, #1d83d8 0%, #6aade5 100%)
-	background: -webkit-linear-gradient(left, #1d83d8 0%,#6aade5 100%)
-	background: linear-gradient(to right, #1d83d8 0%,#6aade5 100%)
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1d83d8', endColorstr='#6aade5',GradientType=1 )
+	background: $legacy-teal
+	//background: #1d83d8
+	//background: -moz-linear-gradient(left, #1d83d8 0%, #6aade5 100%)
+	//background: -webkit-linear-gradient(left, #1d83d8 0%,#6aade5 100%)
+	//background: linear-gradient(to right, #1d83d8 0%,#6aade5 100%)
+	//filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1d83d8', endColorstr='#6aade5',GradientType=1 )
 	.video-frame
 		background: $white
 		box-shadow: 0 3px 5px 0 rgba(20,0,0,0.16), 0 0 0 1px rgba(20,0,0,0.08)
-	.white
-		color: $white
+	.black-text
+		color: $black
+
+hr.dark
+	background: $charcoal
+	border-color: $charcoal
+	color: $charcoal
 
 
 @import 'video'

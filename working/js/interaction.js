@@ -114,7 +114,7 @@ function videoNavigation() {
       animateSlides(slides, x);
       slides.removeClass("active");
       $(x).addClass("active");
-      checkNavColor(x);
+      //checkNavColor(x);
       if ($("main:first-of-type").hasClass("active")) {
         $('*[data-nav="previous"]').addClass('disabled');
       } else if ($("main:last-of-type").hasClass("active")) {
@@ -143,7 +143,7 @@ function prevNext() {
       slides.removeClass("active");
       $(x).addClass("active");
       $(y).addClass("active");
-      checkNavColor(x);
+      //checkNavColor(x);
   });
 
   $('*[data-nav="next"]').click(function(){
@@ -161,7 +161,7 @@ function prevNext() {
       slides.removeClass("active");
       $(x).addClass("active");
       $(y).addClass("active");
-      checkNavColor(x);
+      //checkNavColor(x);
   });
 }
 
