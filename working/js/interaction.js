@@ -1,7 +1,7 @@
 //variables
 var slides = $('main');
 var videoNav = $(".video-nav");
-var tl = new TimelineMax();
+var tl = new TimelineMax({onComplete: slideShow});
 
 //timing units
 var t0 = 0.15;
@@ -179,6 +179,26 @@ function animateSlides(y,z) {
   tl.add( TweenMax.to(z, t1, {top:"0", opacity: 1, display: "block", ease: Circ.easeOut}) );
 }
 
+function slideShow() {
+  if ($('#five').hasClass('active')) {
+  $('.slideshow').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: false,
+    dots: true,
+    appendDots: '.dots-container',
+    customPaging: function(slick,index) {
+    var image_title = slick.$slides.eq(index).find('img').attr('title') || '';
+    return '<div> ' + image_title + '</div>';
+
+    },
+  });
+  } else {
+    $('.slideshow').slick('unslick');
+  }
+}
+
+
 
 
 $(document).ready(function() {
@@ -187,4 +207,5 @@ $(document).ready(function() {
   videoNavigation();
   prevNext();
   $("main:not(#one)").hide();
+  //slideShow();
 });
