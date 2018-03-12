@@ -135,10 +135,11 @@
                     </div>
                 </div>
                 <div class="col-md-5 instructions">
-                    <h2>Check your deposits</h2>
+                    <h2>Check your Central Pay deposits</h2>
                     <ol>
                         <li>Open Central Pay from the left menu, then select Payments</li>
-                        <li>Enter in a date range, then start your search</li>
+                        <li>Enter in a date range you wish to review</li>
+                        <li>Start your search</li>
                         <li>To see details, select the Check number (middle of screen)</li>
                     </ol>
                 </div>
@@ -156,10 +157,12 @@
                     </div>
                 </div>
                 <div class="col-md-5 col-md-pull-7 instructions">
-                    <h2>Verify your deposits</h2>
+                    <h2>Verify your Direct Payer deposits</h2>
                     <ol>
                         <li>Open Reconciliation, then select Deposits</li>
-                        <li>Select the check box, select Verify Deposit, then the deposit date</li>
+                        <li>Select the check box</li>
+                        <li>Select Verify Deposit</li>
+                        <li>Select the date the funds were deposited</li>
                     </ol>
                     <p><em>Tip: you can add comments to deposits by clicking on the pencil</em></p>
                 </div>
@@ -179,7 +182,7 @@
                 <div class="col-md-5 instructions">
                     <h2>Work your payment exceptions</h2>
                     <ol>
-                        <li>Open Reconciliation from the left menu, then select Payment Exceptions</li>
+                        <li>Open Reconciliation from the left menu, then select Payment Exceptions underneath Exceptions</li>
                         <li>Select a claim status on the far right</li>
                         <li>Choose the action you’d like to take with the payment exception claim <a href="#choose">(see below)</a></li>
                     </ol>
@@ -200,20 +203,20 @@
                             </div>
                             <div class="col-md-6">
                                 <h3 class="small">Accept overpayment and post claim</h3>
-                                <p>Closes the claim. The claim difference will appear on the overpayment report.</p>
+                                <p>Posts the claim and the difference will appear on the overpayment report.</p>
                             </div>
                             <hr class="dark"/>
                             <div class="col-sm-6 col-md-6">
                                 <h3 class="small">Move to dispute queue</h3>
-                                <p>Move the claim from to do to the dispute tab (you are responsible for disputing claims with payers)</p>
+                                <p>Moves the claim from the "to do" tab to the "disputes" tab.  Select a reason or create your own to identify why the claim has been moved to dispute. The pharmacy is responsible for disputing claims with payers.</p>
                             </div>
                             <div class="col-sm-6 col-md-6">
                                 <h3 class="small">Set as a pending offset</h3>
-                                <p>Moves to the reviewed tab. Use for claims you’re waiting on to be reversed or repaid (like paid, reverse, or paid). </p>
+                                <p>Move the claim to the reviewed tab. Use for claims you are waiting on the reversal or payment to arrive. (ex.  Paid, reversed, paid)</p>
                             </div>
                             <div class="col-sm-6 col-md-6">
                                 <h3 class="small">Nullify 835 payment detail</h3>
-                                <p>Remove the exception (this should only be used when dispense data is not available, like when transitioning from another reconciliation solution)</p>
+                                <p>Remove the exception (this should only be used when dispense data is not available. For example, when transitioning from another reconciliation solution.)</p>
                             </div>
                             <div class="col-sm-6 col-md-6">
                                 <h3 class="small">Rematch claim and payment</h3>
@@ -239,11 +242,12 @@
                 </div>
                 <div class="col-md-5 instructions col-md-pull-7">
                     <h2>Work your claim exceptions</h2>
-                    <p>Writing off claims after 60 days</p>
+                    <p>Consider writing off claims after 60 days</p>
                     <ol>
                         <li>Open Reconciliation from the left menu, then select Claim Exceptions</li>
                         <li>Change the dropdown to >60</li>
-                        <li>Select a claim status and change to write-off for non-payment and post claim</li>
+                        <li>Select a claim status on the far right</li>
+                        <li>Change to write-off for non-payment and post claim</li>
                     </ol>
                 </div>
             </section>
@@ -268,10 +272,18 @@
                     <ol>
                         <li>Open Reconciliation from the left menu, then select Paper EOBs</li>
                         <li>Start a new payment</li>
-                        <li>Enter in the payment info, such as check number, date, amount, etc</li>
-                        <li>Select the store, payer, and date range before continuing</li>
+                        <li>Enter in the payment info, such as:
+                            <ul>
+                                <li>Store name</li>
+                                <li>Check number</li>
+                                <li>Check date</li>
+                                <li>Payer name</li>
+                                <li>Service fees/adjustment<br>*this amount will default to a negative therefore if it is a positive adjustment a minus sign is needed before the $</li>
+                                <li>Date range for dates of fill</li>
+                            </ul>
+                        </li>
                         <li>Remove any claims not on the remittance by selecting them and using remove checked</li>
-                        <li>You can Complete Payment Batch when your’e ready to close claims</li>
+                        <li>Complete Payment Batch when finished</li>
                     </ol>
                 </div>
             </section>
@@ -294,7 +306,7 @@
                         <li>Open Reconciliation from the left menu, then select Payment Exceptions</li>
                         <li>Select a claim status on the far right</li>
                         <li>Move to the dispute queue and set the reason to partially paid</li>
-                        <li>From here, you can enter the paper EOBs</li>
+                        <li>Then refer to the steps to complete a paper EOB to apply the voucher information</li>
                     </ol>
                 </div>
             </section>
@@ -308,15 +320,15 @@
                 <section class="slideshow">
                     <div class="slide">
                         <div class="slideshow-img">
-                            <img src="assets/reports/carousel-content-aged-receivables.jpg" title="Aged receivables"/>
+                            <img src="assets/reports/carousel-content-aged-receivables.jpg" title="Aged receivables snapshot"/>
                         </div>
                         <div class="slideshow-caption flex-row default-gutter">
                             <div class="col-sm-6">
-                                <h2>How to pull aged receivables report</h2>
+                                <h2>How to pull aged receivables report snapshot</h2>
                                 <ol>
                                     <li>Under Reconciliation, select reports</li>
-                                    <li>Select Aged Receivables, then select Store and Date</li>
-                                    <li>Report sample (bottom right)</li>
+                                    <li>Select Aged Receivables Snapshot, then select Store and Date</li>
+                                    <li>Run report (report sample on right)</li>
                                 </ol>
                             </div>
                             <div class="col-sm-6">
@@ -335,13 +347,15 @@
                                 <h2>How to pull change in receivables report</h2>
                                 <ol>
                                     <li>Under Reconciliation, select reports</li>
-                                    <li>Select Change in Receivables, then select Store and Date</li>
-                                    <li>Report sample (bottom right)</li>
+                                    <li>Select Reports</li>
+                                    <li>Select Change in Receivables</li>
+                                    <li>Select Store and Date range</li>
+                                    <li>Run report (report sample on right)</li>
                                 </ol>
                             </div>
                             <div class="col-sm-6">
                                 <h2>Why are changes in receivables important?</h2>
-                                <p>This report shows all payments received during a time period. Does not take fill dates into account. (Ex: filled 3/1/24, paid 12/1/24)</p>
+                                <p>This report shows all payments received during a time period. Does not take fill dates into account. (Ex: filled 3/1/24, paid 12/1/24) This data is pulled by the verified date of the deposit.</p>
                             </div>
                         </div>
                     </div>
@@ -355,13 +369,14 @@
                                 <h2>How to pull claims with write-off report</h2>
                                 <ol>
                                     <li>Under Reconciliation, select reports</li>
-                                    <li>Select Claims with Write-Off Amounts, then select Store and Date</li>
-                                    <li>Report sample (right)</li>
+                                    <li>Select Claims with Write-Off Amounts</li>
+                                    <li>Select Store and Date range</li>
+                                    <li>Run report (report sample on right)</li>
                                 </ol>
                             </div>
                             <div class="col-sm-6">
                                 <h2>Why is the write-off report important?</h2>
-                                <p>This report shows any write-offs that occured during the month. Don't pay taxes on any write-offs.</p>
+                                <p>Write-offs reduce your aged receivables, reducing your tax liability. Be sure to discuss this with your accountant.</p>
                             </div>
                         </div>
                     </div>
@@ -375,13 +390,14 @@
                                 <h2>How to pull claims with overpayment report</h2>
                                 <ol>
                                     <li>Under Reconciliation, select reports</li>
-                                    <li>Select Claims with Write-Off Amounts, then select Store and Date</li>
-                                    <li>Report sample (bottom right)</li>
+                                    <li>Select Claims with Overpayments report</li>
+                                    <li>Select Store and Date range</li>
+                                    <li>Run report (report sample on right)</li>
                                 </ol>
                             </div>
                             <div class="col-sm-6">
                                 <h2>Why are claims with overpayments important?</h2>
-                                <p>This report represents all accepted overpayments and is needed to ensure all payments are included for tax purposes.</p>
+                                <p>This report represents all accepted overpayments and is needed to ensure all payments are included for tax purposes. Some stores will accept overpayment, so the dollar amount is reported on this report as revenue, however the claim itself may not have been overpaid. Please be sure to discuss this with your accountant.</p>
                             </div>
                         </div>
                     </div>
@@ -395,13 +411,14 @@
                                 <h2>How to pull DIR-GER report</h2>
                                 <ol>
                                     <li>Under Central Pay, select reports</li>
-                                    <li>Select Claims with Write-Off Amounts, then select Store and Date</li>
-                                    <li>Report sample (bottom middle)</li>
+                                    <li>Select DIR-GER Fee report</li>
+                                    <li>Select Store and Date</li>
+                                    <li>Run report (Report sample bottom)</li>
                                 </ol>
                             </div>
                             <div class="col-sm-6">
                                 <h2>Why is the DIR – GER report important?</h2>
-                                <p>This report shows all the DIRs and GERs taken during a time period. These are claims that have been paid and now need to be adjusted on your taxes.</p>
+                                <p>This report shows all the DIR and GER fees taken during a specific time period. These are claims that have been paid already, and are now being adjusted due to the DIR or GER impact. It is important to note certain payers withhold this amount several months after the pharmacy has been paid. You should discuss the impact that this has on your reported revenue and tax liability with your accountant.</p>
                         </div>
                     </div>
                 </section>
