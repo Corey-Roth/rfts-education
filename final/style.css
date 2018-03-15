@@ -662,7 +662,22 @@ ol {
   counter-reset: list-counter;
   list-style-type: none; }
 
-ol li:before {
+ol li ul {
+  padding-left: 1.25rem; }
+
+.instructions li.small {
+  font-size: 1em;
+  font-weight: 400; }
+  .instructions li.small:before {
+    content: "• ";
+    font-size: 1.25em; }
+
+.smaller {
+  display: block;
+  font-size: 14px;
+  font-style: italic; }
+
+ol > li:before {
   content: counter(list-counter) ". ";
   counter-increment: list-counter;
   font-weight: 700; }
